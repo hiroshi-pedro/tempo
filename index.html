@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <!--font-family: 'Ubuntu', sans-serif;-->
+    <!--Fontawesome-->
+        <link rel="stylesheet" href="plugins/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+        <script src="plugins/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade</h3>
+            <div class="form_input_container">
+                <input type="text" placeholder="insira-nome-da-cidade" id="city-input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="loadng">
+            <img src="plugins/Rolling-1s-200px.svg" alt="">
+        </div>
+        <div id="weather-data">
+            <div class="dados-cidade">
+                <div class="dados-cidade-1">
+            <h2><i class="fa-solid fa-location-dot"></i></h2>
+            <span id="city"></span>
+            <img src="https://countryflagsapi.com/png/" id="country" alt="bandeira-do-país">
+            </div>
+            <div class="dados-cidade-1">
+            <p id="temperature"><span></span>&deg;C</p>
+            </div>
+            </div>
+            <div class="desciption-flex">
+            <div id="desciption-container" class="desciption">
+                <p id="descriptioin"></p>
+                <img src="https://openweathermap.org/img/wn/.png" alt="condiçoes do tempo" id="weather-icon">
+            </div>
+            <div class="details-container desciption">
+                <p>
+                    <i class="fa-solid fa-water"></i><span id="umidity"></span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-wind"></i><span id="wind"></span>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

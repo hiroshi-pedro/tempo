@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+.container {
+    width: 500px;
+    max-width: 90%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(65, 0, 126);
+    color: white;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.836);
+}
+
+.form {
+    width: 90%;
+    padding: 7px 0;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: 2px solid white;
+}
+
+.form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form input {
+    padding: 5px;
+    width: 250px;
+    max-width: 80%;
+}
+
+.form button {
+    padding: 7.5px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    margin: auto;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background-color: rgb(9, 0, 139);
+} 
+
+#weather-data{
+     width: 100%;
+     display: none;
+}
+
+.dados-cidade {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.dados-cidade img {
+    width: 60px;
+}
+
+.dados-cidade-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.dados-cidade-1 * {
+    margin: auto 4%;
+}
+
+#temperature * {
+    margin: 0;
+}
+
+.desciption-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0;
+}
+
+.desciption {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.desciption span {
+    padding: 8px;
+}
+
+#desciption-container {
+    border-right: 3px solid white;
+}
+
+.loadng {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    display: none;
+}
+
+.loadng img {
+    width: 20%;
+}
+
+body {
+    background-color: rgb(35, 156, 136);
+}
