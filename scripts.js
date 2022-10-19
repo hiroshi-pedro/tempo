@@ -32,6 +32,7 @@ const alertError = document.querySelector('#error_alert')
         if (data.cod === "404") {
             dataForm.style.display = "none"
             alertError.style.display = "block"
+            ocument.body.style.backgroundColor = "rgb(35, 156, 136)"
           }else {
             document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
             dataForm.style.display = "block"
