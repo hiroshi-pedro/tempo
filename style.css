@@ -116,3 +116,13 @@ body {
     margin: 25px 0;
     display: none;
 }
+
+footer {
+    position: absolute;
+    transform: translateY(100%);
+    top: 90vh;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 0px 10px black;
+}
