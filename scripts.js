@@ -14,7 +14,7 @@ const countryElement = document.querySelector('#country')
 const humidityElement = document.querySelector('#umidity')
 const windElement = document.querySelector('#wind')
 const dataForm = document.querySelector('#weather-data')
-const carregamento = document.querySelector('.loadng')
+const alertError = document.querySelector('#error_alert')
 
 //funções
 
@@ -29,10 +29,15 @@ const carregamento = document.querySelector('.loadng')
         const data = await res.json()
         console.log(data)
 
-        document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
-
-
-        return data
+        if (data.cod === "404") {
+            dataForm.style.display = "none"
+            alertError.style.display = "block"
+          }else {
+            document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
+            dataForm.style.display = "block"
+            alertError.style.display = "none"
+            return data
+          }
     }
 
     const showWeatherData = async (city) => {
@@ -53,7 +58,6 @@ searchBtn.addEventListener("click", (e) => {
     e.preventDefault()
 
     const city = cityInput.value;
-    dataForm.style.display = "block"
 
     showWeatherData(city)
 })

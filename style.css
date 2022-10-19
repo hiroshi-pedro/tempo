@@ -107,18 +107,12 @@
     border-right: 3px solid white;
 }
 
-.loadng {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 25px 0;
-    display: none;
-}
-
-.loadng img {
-    width: 20%;
-}
-
 body {
     background-color: rgb(35, 156, 136);
+}
+
+#error_alert {
+    text-align: center;
+    margin: 25px 0;
+    display: none;
 }
